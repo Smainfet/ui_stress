@@ -1,0 +1,7 @@
+{
+    "host": "localhost", 
+    "user": "root", 
+    "password": "motdepasse",
+    "database":"db_signals"
+
+}

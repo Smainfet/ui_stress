@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>plotManager module &mdash; ui_stress  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="reading_data module" href="reading_data.html" />
+    <link rel="prev" title="mainWindow module" href="mainWindow.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> ui_stress
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">TX</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="db_connection.html">db_connection module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mainWindow.html">mainWindow module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">plotManager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reading_data.html">reading_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="secondDialog.html">secondDialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools_signals.html">tools_signals module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ui_stress</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">TX</a> &raquo;</li>
+      <li>plotManager module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/plotManager.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-plotManager">
+<span id="plotmanager-module"></span><h1>plotManager module<a class="headerlink" href="#module-plotManager" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="plotManager.PlotLine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotManager.</span></span><span class="sig-name descname"><span class="pre">PlotLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plotLine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currentX</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currentY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isPlotted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewBox</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axisPlot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getAllDataX">
+<span class="sig-name descname"><span class="pre">getAllDataX</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getAllDataX" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getAllDataY">
+<span class="sig-name descname"><span class="pre">getAllDataY</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getAllDataY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getAxis">
+<span class="sig-name descname"><span class="pre">getAxis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getAxis" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getColor">
+<span class="sig-name descname"><span class="pre">getColor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getColor" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getCurrentDataPlottedX">
+<span class="sig-name descname"><span class="pre">getCurrentDataPlottedX</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getCurrentDataPlottedX" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getCurrentDataPlottedY">
+<span class="sig-name descname"><span class="pre">getCurrentDataPlottedY</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getCurrentDataPlottedY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getCurrentValueIndex">
+<span class="sig-name descname"><span class="pre">getCurrentValueIndex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getCurrentValueIndex" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getIsPlotted">
+<span class="sig-name descname"><span class="pre">getIsPlotted</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getIsPlotted" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getLineReference">
+<span class="sig-name descname"><span class="pre">getLineReference</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getLineReference" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getNameSignal">
+<span class="sig-name descname"><span class="pre">getNameSignal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getNameSignal" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.getViewBox">
+<span class="sig-name descname"><span class="pre">getViewBox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.getViewBox" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setAxis">
+<span class="sig-name descname"><span class="pre">setAxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setAxis" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setCurrentDataPlottedX">
+<span class="sig-name descname"><span class="pre">setCurrentDataPlottedX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setCurrentDataPlottedX" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setCurrentDataPlottedY">
+<span class="sig-name descname"><span class="pre">setCurrentDataPlottedY</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setCurrentDataPlottedY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setCurrentValueIndex">
+<span class="sig-name descname"><span class="pre">setCurrentValueIndex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">newValue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setCurrentValueIndex" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setIsPlotted">
+<span class="sig-name descname"><span class="pre">setIsPlotted</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setIsPlotted" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setLineReference">
+<span class="sig-name descname"><span class="pre">setLineReference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setLineReference" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setViewBoxReference">
+<span class="sig-name descname"><span class="pre">setViewBoxReference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setViewBoxReference" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setWholeDataX">
+<span class="sig-name descname"><span class="pre">setWholeDataX</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listX</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setWholeDataX" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotLine.setWholeDataY">
+<span class="sig-name descname"><span class="pre">setWholeDataY</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listY</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotLine.setWholeDataY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="plotManager.PlotManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotManager.</span></span><span class="sig-name descname"><span class="pre">PlotManager</span></span><a class="headerlink" href="#plotManager.PlotManager" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addElement">
+<span class="sig-name descname"><span class="pre">addElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addElement" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addElementListFilter">
+<span class="sig-name descname"><span class="pre">addElementListFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addElementListFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addListFeaturesFilter">
+<span class="sig-name descname"><span class="pre">addListFeaturesFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listObjFeatures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addListFeaturesFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addNewViewBoxPlotFeature">
+<span class="sig-name descname"><span class="pre">addNewViewBoxPlotFeature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFeature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceViewBox</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addNewViewBoxPlotFeature" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addNewViewBoxPlotFilter">
+<span class="sig-name descname"><span class="pre">addNewViewBoxPlotFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceViewBox</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addNewViewBoxPlotFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addReferenceNewPlot">
+<span class="sig-name descname"><span class="pre">addReferenceNewPlot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addReferenceNewPlot" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addReferenceNewPlotFeature">
+<span class="sig-name descname"><span class="pre">addReferenceNewPlotFeature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFeature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addReferenceNewPlotFeature" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addReferenceNewPlotFilter">
+<span class="sig-name descname"><span class="pre">addReferenceNewPlotFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addReferenceNewPlotFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addViewBoxEnergyFeature">
+<span class="sig-name descname"><span class="pre">addViewBoxEnergyFeature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">viewBoxRef</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addViewBoxEnergyFeature" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.addViewBoxFeaturesFilter">
+<span class="sig-name descname"><span class="pre">addViewBoxFeaturesFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">viewBoxReference</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.addViewBoxFeaturesFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.changePlotState">
+<span class="sig-name descname"><span class="pre">changePlotState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.changePlotState" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.changePlotStateFeature">
+<span class="sig-name descname"><span class="pre">changePlotStateFeature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameFeature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.changePlotStateFeature" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.changePlotStateSignal">
+<span class="sig-name descname"><span class="pre">changePlotStateSignal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.changePlotStateSignal" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.clearPlotManager">
+<span class="sig-name descname"><span class="pre">clearPlotManager</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.clearPlotManager" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getCommonIndexFilterPlot">
+<span class="sig-name descname"><span class="pre">getCommonIndexFilterPlot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getCommonIndexFilterPlot" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getCommonIndexPlotSignal">
+<span class="sig-name descname"><span class="pre">getCommonIndexPlotSignal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getCommonIndexPlotSignal" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getFeaturePlotObj">
+<span class="sig-name descname"><span class="pre">getFeaturePlotObj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">featureName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getFeaturePlotObj" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getFiltersCurrentSignals">
+<span class="sig-name descname"><span class="pre">getFiltersCurrentSignals</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getFiltersCurrentSignals" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getInstance">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getInstance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getInstance" title="Permalink to this definition"></a></dt>
+<dd><p>Static access method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getLinePlotFilter">
+<span class="sig-name descname"><span class="pre">getLinePlotFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getLinePlotFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getListAllFeatures">
+<span class="sig-name descname"><span class="pre">getListAllFeatures</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getListAllFeatures" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getListFiltersBySignalName">
+<span class="sig-name descname"><span class="pre">getListFiltersBySignalName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getListFiltersBySignalName" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getPlotFilterByName">
+<span class="sig-name descname"><span class="pre">getPlotFilterByName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nameFilter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getPlotFilterByName" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getSingalPlotByName">
+<span class="sig-name descname"><span class="pre">getSingalPlotByName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getSingalPlotByName" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getViewBoxEnergyFeature">
+<span class="sig-name descname"><span class="pre">getViewBoxEnergyFeature</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getViewBoxEnergyFeature" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.getViewBoxRefFeaturesFilter">
+<span class="sig-name descname"><span class="pre">getViewBoxRefFeaturesFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signalName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.getViewBoxRefFeaturesFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.listLinesFilter">
+<span class="sig-name descname"><span class="pre">listLinesFilter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.listLinesFilter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.listLinesPlot">
+<span class="sig-name descname"><span class="pre">listLinesPlot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.listLinesPlot" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.setCommonIndexFilterPlot">
+<span class="sig-name descname"><span class="pre">setCommonIndexFilterPlot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.setCommonIndexFilterPlot" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.setCommonIndexPlotSignal">
+<span class="sig-name descname"><span class="pre">setCommonIndexPlotSignal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.setCommonIndexPlotSignal" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotManager.PlotManager.trouverIndiceValeurLaPlusProche">
+<span class="sig-name descname"><span class="pre">trouverIndiceValeurLaPlusProche</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotManager.PlotManager.trouverIndiceValeurLaPlusProche" title="Permalink to this definition"></a></dt>
+<dd><p>Cette methode retourne l’indice de la liste de la valeur 
+la plus proche de l’argument value.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mainWindow.html" class="btn btn-neutral float-left" title="mainWindow module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="reading_data.html" class="btn btn-neutral float-right" title="reading_data module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, jcamargo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
