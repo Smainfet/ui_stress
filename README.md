@@ -1,3 +1,10 @@
+<div align="center">
+  
+![ezgif com-optimize-2](https://github.com/Smainfet/ui_stress-master_2/assets/97527246/685fcd41-9c1a-4523-b11c-a9162f6d180f)
+
+</div>
+
+
 # UI / DB Système pour le traitement des signaux ECG,EMG,EDA 
 
 Logiciel développé sur Python3.8.10
