@@ -1,4 +1,4 @@
-# UI / DB Systemè pour le traitement des signaux ECG,EMG,EDA 
+# UI / DB Système pour le traitement des signaux ECG,EMG,EDA 
 
 Logiciel développé sur Python3.8.10
 
