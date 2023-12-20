@@ -1,3 +1,5 @@
+## CNN for automated diagnosis of respiratory diseases in audio files
+
 <div align="center">
   
 ![ezgif com-optimize-2](https://github.com/Smainfet/ui_stress-master_2/assets/97527246/685fcd41-9c1a-4523-b11c-a9162f6d180f)
