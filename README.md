@@ -10,7 +10,7 @@ As part of this work, I worked on PPG signal preprocessing. I developed a proces
 
 # UI / DB System for processing ECG,EMG,EDA signals
 
-Software developed on Python3.8.10
+Software developed on Python 3.8.10
 
 ## Packages used
 
