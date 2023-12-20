@@ -4,12 +4,15 @@
 
 </div>
 
+An experimental study was carried out on 74 subjects recorded in two states: an initial state of relaxation followed by a phase of stress where the subject performs different stressful tasks (mental calculation, stroop test which is a color game). Four physiological signals including: ECG, PPG, EDA and EMG are recorded during both phases.
 
-# UI / DB Système pour le traitement des signaux ECG,EMG,EDA 
+As part of this work, I worked on PPG signal preprocessing. I developed a processing chain including: Exploratory data analysis, PPG signal processing and extraction of temporal, frequency and statistical parameters.
 
-Logiciel développé sur Python3.8.10
+# UI / DB System for processing ECG,EMG,EDA signals
 
-## Modules utilisés
+Software developed on Python3.8.10
+
+## Packages used
 
 1. PyQt5   5.15.4
 2. pyqt5-plugins 5.15.4.2.2
